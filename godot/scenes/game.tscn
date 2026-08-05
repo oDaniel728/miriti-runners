@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bngdwjuyuwakx"]
+
+[ext_resource type="Texture2D" uid="uid://d4afby6bhndvo" path="res://icon.svg" id="1_uwrxv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4g3bo"]
+radius = 60.0
+
+[node name="Game" type="Node2D" unique_id=549706062]
+
+[node name="Level" type="Node2D" parent="." unique_id=1282701317]
+position = Vector2(-580, -324)
+
+[node name="Sprite2D" type="Sprite2D" parent="Level" unique_id=1641274163]
+modulate = Color(0.37221208, 0.61557513, 3.85046e-07, 1)
+position = Vector2(137, 319.5)
+scale = Vector2(2.1875, 5.0859375)
+texture = ExtResource("1_uwrxv")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Level" unique_id=499688344]
+modulate = Color(0.3102, 0.33, 0.31185, 1)
+position = Vector2(1015.99994, 323)
+scale = Vector2(2.1875, 5.0859375)
+texture = ExtResource("1_uwrxv")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Level" unique_id=682875711]
+position = Vector2(576, 325)
+scale = Vector2(4.6874995, 5.0859375)
+texture = ExtResource("1_uwrxv")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1101653206]
+position = Vector2(-6, 192)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=306450122]
+texture = ExtResource("1_uwrxv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=597158879]
+shape = SubResource("CircleShape2D_4g3bo")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2139342966]

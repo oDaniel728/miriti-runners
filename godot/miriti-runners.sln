@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "miriti-runners", "miriti-runners.csproj", "{1180B5CD-2177-476F-A3A6-038CB921B25A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1180B5CD-2177-476F-A3A6-038CB921B25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1180B5CD-2177-476F-A3A6-038CB921B25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1180B5CD-2177-476F-A3A6-038CB921B25A}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{1180B5CD-2177-476F-A3A6-038CB921B25A}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{1180B5CD-2177-476F-A3A6-038CB921B25A}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{1180B5CD-2177-476F-A3A6-038CB921B25A}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
