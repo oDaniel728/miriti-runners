@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://np87cylqwp40"]
+
+[ext_resource type="Script" uid="uid://dlk8br44ul64w" path="res://scripts/scenes/Enemy2d.cs" id="1_a2hcj"]
+[ext_resource type="Texture2D" uid="uid://d4afby6bhndvo" path="res://icon.svg" id="2_u7j67"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4g3bo"]
+radius = 65.490456
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u7j67"]
+radius = 54.00926
+
+[node name="Enemy2D" type="CharacterBody2D" unique_id=622226090 node_paths=PackedStringArray("CollisionArea")]
+script = ExtResource("1_a2hcj")
+CollisionArea = NodePath("Area2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=663666444]
+modulate = Color(1, 0.7039573, 0.6940188, 1)
+texture = ExtResource("2_u7j67")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2014636040]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1590531014]
+shape = SubResource("CircleShape2D_4g3bo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=304958283]
+shape = SubResource("CircleShape2D_u7j67")

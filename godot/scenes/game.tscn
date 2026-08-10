@@ -1,40 +1,94 @@
 [gd_scene format=3 uid="uid://bngdwjuyuwakx"]
 
+[ext_resource type="Script" uid="uid://de3bh23t8yx6k" path="res://scripts/scenes/Parallax2d.cs" id="1_iywne"]
 [ext_resource type="Texture2D" uid="uid://d4afby6bhndvo" path="res://icon.svg" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://np87cylqwp40" path="res://scenes/enemy_2d.tscn" id="2_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://bbsanf58fwpox" path="res://scenes/player.tscn" id="2_yqjtg"]
+[ext_resource type="Script" uid="uid://dn3r8cov4p76l" path="res://scripts/scenes/EnemySpawner.cs" id="3_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://7banvpghhnsj" path="res://scenes/enemies/motorcycle.tscn" id="5_p57ef"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_4g3bo"]
-radius = 60.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4g3bo"]
+size = Vector2(286, 662)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7e81q"]
+size = Vector2(375, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iywne"]
+size = Vector2(126, 11)
 
 [node name="Game" type="Node2D" unique_id=549706062]
 
 [node name="Level" type="Node2D" parent="." unique_id=1282701317]
 position = Vector2(-580, -324)
 
-[node name="Sprite2D" type="Sprite2D" parent="Level" unique_id=1641274163]
-modulate = Color(0.37221208, 0.61557513, 3.85046e-07, 1)
-position = Vector2(137, 319.5)
-scale = Vector2(2.1875, 5.0859375)
-texture = ExtResource("1_uwrxv")
+[node name="Parallax2D" type="Parallax2D" parent="Level" unique_id=755510698]
+repeat_size = Vector2(0, 649)
+autoscroll = Vector2(0, 100)
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("1_iywne")
 
-[node name="Sprite2D2" type="Sprite2D" parent="Level" unique_id=499688344]
+[node name="Rua" type="Sprite2D" parent="Level/Parallax2D" unique_id=499688344]
 modulate = Color(0.3102, 0.33, 0.31185, 1)
-position = Vector2(1015.99994, 323)
+position = Vector2(1018.99994, 320)
 scale = Vector2(2.1875, 5.0859375)
 texture = ExtResource("1_uwrxv")
 
-[node name="Sprite2D3" type="Sprite2D" parent="Level" unique_id=682875711]
-position = Vector2(576, 325)
+[node name="Calcada" type="Sprite2D" parent="Level/Parallax2D" unique_id=682875711]
+position = Vector2(579, 322)
 scale = Vector2(4.6874995, 5.0859375)
 texture = ExtResource("1_uwrxv")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1101653206]
-position = Vector2(-6, 192)
-metadata/_edit_group_ = true
-
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=306450122]
+[node name="Floresta" type="Sprite2D" parent="Level/Parallax2D" unique_id=1641274163]
+modulate = Color(0.37221208, 0.61557513, 3.85046e-07, 1)
+position = Vector2(140, 316.5)
+scale = Vector2(2.1875, 5.0859375)
 texture = ExtResource("1_uwrxv")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=597158879]
-shape = SubResource("CircleShape2D_4g3bo")
+[node name="StaticBody2D" type="StaticBody2D" parent="Level" unique_id=1270968333]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D" unique_id=2142304984]
+position = Vector2(133, 321)
+shape = SubResource("RectangleShape2D_4g3bo")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Level" unique_id=1011235894]
+position = Vector2(1273, 4)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/StaticBody2D2" unique_id=1248715933]
+position = Vector2(133, 321)
+shape = SubResource("RectangleShape2D_4g3bo")
+
+[node name="EnemySpawner" type="Node2D" parent="Level" unique_id=61069222 node_paths=PackedStringArray("SpawnArea")]
+position = Vector2(352, -22)
+script = ExtResource("3_lbhrr")
+SpawnArea = NodePath("CollisionShape2D")
+Enemies = Array[PackedScene]([ExtResource("2_lnu2h")])
+Chances = Array[float]([1.0])
+SpawnInterval = 1.5
+metadata/_custom_type_script = "uid://dn3r8cov4p76l"
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/EnemySpawner" unique_id=1461633033]
+position = Vector2(215.5, -14.5)
+shape = SubResource("RectangleShape2D_7e81q")
+
+[node name="EnemySpawner2" type="Node2D" parent="Level" unique_id=1429246683 node_paths=PackedStringArray("SpawnArea")]
+position = Vector2(935, -22)
+script = ExtResource("3_lbhrr")
+SpawnArea = NodePath("CollisionShape2D")
+Enemies = Array[PackedScene]([ExtResource("5_p57ef")])
+Chances = Array[float]([0.5])
+SpawnInterval = 1.5
+metadata/_custom_type_script = "uid://dn3r8cov4p76l"
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/EnemySpawner2" unique_id=489547663]
+position = Vector2(91, -14.5)
+shape = SubResource("RectangleShape2D_iywne")
+
+[node name="Player" parent="." unique_id=1969506453 instance=ExtResource("2_yqjtg")]
+position = Vector2(-6, 192)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2139342966]
