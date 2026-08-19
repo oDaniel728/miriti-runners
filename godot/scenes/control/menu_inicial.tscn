@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://b8g3vynirlrue"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_4g3bo"]
-line_spacing = -16.0
-font_size = 91
+[ext_resource type="Script" uid="uid://enficnl4ca5v" path="res://scripts/misc/MenuParallax2d.cs" id="1_aecl0"]
+[ext_resource type="Texture2D" uid="uid://by4te81w1rusp" path="res://assets/menu/miriti_runner_menu-fundo-2.png" id="2_h6rtm"]
 
 [node name="MenuInicial" type="Control" unique_id=1292457264]
 layout_mode = 3
@@ -12,52 +11,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="." unique_id=347501052]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -429.0
-offset_top = -126.5
-offset_right = -61.0
-offset_bottom = 126.5
-grow_horizontal = 2
-grow_vertical = 2
-text = "Miriti
-Runners"
-label_settings = SubResource("LabelSettings_4g3bo")
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=383067284]
+repeat_size = Vector2(0, 382)
+repeat_times = 5
+script = ExtResource("1_aecl0")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1567855367]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 113.0
-offset_top = -196.0
-offset_right = 457.0
-offset_bottom = 196.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 38
-alignment = 1
-
-[node name="Button" type="Button" parent="VBoxContainer" unique_id=441452282]
-layout_mode = 2
-theme_override_font_sizes/font_size = 49
-text = "Jogar"
-
-[node name="Button2" type="Button" parent="VBoxContainer" unique_id=155773027]
-layout_mode = 2
-theme_override_font_sizes/font_size = 49
-text = "Opções"
-
-[node name="Button3" type="Button" parent="VBoxContainer" unique_id=105934130]
-layout_mode = 2
-theme_override_font_sizes/font_size = 49
-text = "Sair"
+[node name="TextureRect" type="TextureRect" parent="Parallax2D" unique_id=1667910063]
+offset_right = 1152.0
+offset_bottom = 576.0
+texture = ExtResource("2_h6rtm")
