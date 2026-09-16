@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://de3bh23t8yx6k" path="res://scripts/scenes/Parallax2d.cs" id="1_iywne"]
 [ext_resource type="Texture2D" uid="uid://c18chk8xamwlf" path="res://assets/tiles/concrete_path.png" id="2_gee14"]
-[ext_resource type="PackedScene" uid="uid://np87cylqwp40" path="res://scenes/enemy_2d.tscn" id="2_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://np87cylqwp40" path="res://scenes/enemies/walker.tscn" id="2_lnu2h"]
 [ext_resource type="Texture2D" uid="uid://brxtk85stg4uh" path="res://assets/tiles/street.png" id="2_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://bbsanf58fwpox" path="res://scenes/player.tscn" id="2_yqjtg"]
 [ext_resource type="Script" uid="uid://dn3r8cov4p76l" path="res://scripts/scenes/EnemySpawner.cs" id="3_lbhrr"]

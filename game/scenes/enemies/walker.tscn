@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://np87cylqwp40"]
+
+[ext_resource type="Script" uid="uid://dlk8br44ul64w" path="res://scripts/scenes/Enemy2d.cs" id="1_a2hcj"]
+[ext_resource type="Texture2D" uid="uid://d4afby6bhndvo" path="res://icon.svg" id="2_u7j67"]
+[ext_resource type="Texture2D" uid="uid://c0upv1n3fqi2m" path="res://assets/characters/miriti_runner_biker.png" id="3_jk6ot"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4g3bo"]
+radius = 65.490456
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u7j67"]
+radius = 54.00926
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8j3l"]
+atlas = ExtResource("3_jk6ot")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ussbp"]
+atlas = ExtResource("3_jk6ot")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2blpt"]
+atlas = ExtResource("3_jk6ot")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqibh"]
+atlas = ExtResource("3_jk6ot")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vlew8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8j3l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ussbp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2blpt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqibh")
+}],
+"loop": 1,
+"name": &"new_animation",
+"speed": 10.0
+}]
+
+[node name="Enemy2D" type="CharacterBody2D" unique_id=622226090 node_paths=PackedStringArray("CollisionArea")]
+script = ExtResource("1_a2hcj")
+CollisionArea = NodePath("Area2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=663666444]
+visible = false
+modulate = Color(1, 0.7039573, 0.6940188, 1)
+texture = ExtResource("2_u7j67")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2014636040]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1590531014]
+shape = SubResource("CircleShape2D_4g3bo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=304958283]
+shape = SubResource("CircleShape2D_u7j67")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=465376432]
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_vlew8")
+animation = &"new_animation"
+autoplay = "new_animation"
