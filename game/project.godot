@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="miriti-runners"
-run/main_scene="uid://bngdwjuyuwakx"
+run/main_scene="uid://b8g3vynirlrue"
 config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 PlayerManager="*uid://cgmbyhlp8m1n4"
 GameEvents="*uid://c6xp2c2rs7ut5"
 GameManager="*uid://c1j0t68v3pou5"
+SceneTransition="*res://scenes/SceneTransition.tscn"
 
 [display]
 

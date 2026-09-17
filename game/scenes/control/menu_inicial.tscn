@@ -2,6 +2,13 @@
 
 [ext_resource type="Script" uid="uid://enficnl4ca5v" path="res://scripts/misc/MenuParallax2d.cs" id="1_aecl0"]
 [ext_resource type="Texture2D" uid="uid://by4te81w1rusp" path="res://assets/menu/miriti_runner_menu-fundo-2.png" id="2_h6rtm"]
+[ext_resource type="Texture2D" uid="uid://b5h30q7r5i1bf" path="res://assets/menu/miriti_runner_menu-letra.png" id="4_orlaa"]
+[ext_resource type="Texture2D" uid="uid://cofmkgmd8fw48" path="res://assets/menu/b3.png" id="4_xiffk"]
+[ext_resource type="Script" uid="uid://ciw8xfqsvd4ij" path="res://scripts/scenes/buttons/Setting.cs" id="5_xhdtk"]
+[ext_resource type="Texture2D" uid="uid://btv3shg0qwwql" path="res://assets/menu/b1.png" id="6_swmxd"]
+[ext_resource type="Script" uid="uid://lwv3ccjmuq77" path="res://scripts/scenes/buttons/Play.cs" id="7_swmxd"]
+[ext_resource type="Texture2D" uid="uid://c31k1s0q8f7ha" path="res://assets/menu/b2.png" id="7_ua85e"]
+[ext_resource type="Script" uid="uid://b6rjlxl477s2m" path="res://scripts/scenes/buttons/Exit.cs" id="9_ua85e"]
 
 [node name="MenuInicial" type="Control" unique_id=1292457264]
 layout_mode = 3
@@ -12,11 +19,92 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=383067284]
-repeat_size = Vector2(0, 382)
+modulate = Color(0.5689727, 0.56897277, 0.5689727, 1)
+repeat_size = Vector2(0, 240)
 repeat_times = 5
 script = ExtResource("1_aecl0")
 
-[node name="TextureRect" type="TextureRect" parent="Parallax2D" unique_id=1667910063]
+[node name="TextureRect2" type="TextureRect" parent="Parallax2D" unique_id=1667910063]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 36.0
 offset_right = 1152.0
-offset_bottom = 576.0
+offset_bottom = 612.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.41662845, 0.41662845)
 texture = ExtResource("2_h6rtm")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=422220508]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -653.0
+offset_top = -326.5
+offset_right = 653.0
+offset_bottom = 326.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.56, 0.56)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("4_orlaa")
+
+[node name="setting" type="TextureRect" parent="." unique_id=180597487]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -141.32
+offset_top = -2.3200073
+offset_right = -35.320007
+offset_bottom = 103.67999
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.56, 0.56)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("4_xiffk")
+script = ExtResource("5_xhdtk")
+
+[node name="play" type="TextureRect" parent="." unique_id=440873868]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.320007
+offset_top = -2.3200073
+offset_right = 43.679993
+offset_bottom = 103.67999
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.56, 0.56)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("6_swmxd")
+script = ExtResource("7_swmxd")
+
+[node name="quit" type="TextureRect" parent="." unique_id=1053350587]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 19.679993
+offset_top = -2.3200073
+offset_right = 125.67999
+offset_bottom = 103.67999
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.56, 0.56)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("7_ua85e")
+script = ExtResource("9_ua85e")
