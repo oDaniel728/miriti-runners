@@ -36,7 +36,7 @@ script = ExtResource("1_iywne")
 
 [node name="Calcada" type="Sprite2D" parent="Level/Chao" unique_id=1830213010]
 z_index = -1
-position = Vector2(580, 320)
+position = Vector2(384, 320)
 scale = Vector2(4, 4)
 texture = ExtResource("2_gee14")
 
@@ -61,7 +61,7 @@ ignore_camera_scroll = true
 script = ExtResource("1_iywne")
 
 [node name="Sprite2D" type="Sprite2D" parent="Level/Rua" unique_id=1395665694]
-position = Vector2(1280, 0)
+position = Vector2(1152, 0)
 scale = Vector2(4, 4)
 texture = ExtResource("2_u5sy4")
 offset = Vector2(64, 128)

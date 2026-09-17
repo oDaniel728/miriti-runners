@@ -59,13 +59,15 @@ texture = ExtResource("2_u7j67")
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1590531014]
+scale = Vector2(0.8, 0.8)
 shape = SubResource("CircleShape2D_4g3bo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=304958283]
+scale = Vector2(0.8, 0.8)
 shape = SubResource("CircleShape2D_u7j67")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=465376432]
-scale = Vector2(6, 6)
+scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vlew8")
 animation = &"new_animation"
 autoplay = "new_animation"
