@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5h30q7r5i1bf"
-path="res://.godot/imported/miriti_runner_menu-letra.png-e410e1f7802d8c303c7c023a1326a717.ctex"
+path="res://.godot/imported/miriti_runner_menu-title.png-465901fcdcf36409085ec7993e33c295.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/menu/miriti_runner_menu-letra.png"
-dest_files=["res://.godot/imported/miriti_runner_menu-letra.png-e410e1f7802d8c303c7c023a1326a717.ctex"]
+source_file="res://assets/menu/miriti_runner_menu-title.png"
+dest_files=["res://.godot/imported/miriti_runner_menu-title.png-465901fcdcf36409085ec7993e33c295.ctex"]
 
 [params]
 
