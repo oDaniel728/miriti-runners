@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b8g3vynirlrue"]
 
 [ext_resource type="Script" uid="uid://enficnl4ca5v" path="res://scripts/misc/MenuParallax2d.cs" id="1_aecl0"]
-[ext_resource type="Texture2D" uid="uid://by4te81w1rusp" path="res://assets/menu/miriti_runner_menu-fundo-2.png" id="2_h6rtm"]
+[ext_resource type="Texture2D" uid="uid://by4te81w1rusp" path="res://assets/menu/background/miriti_runner_menu-fundo-2.png" id="2_h6rtm"]
 [ext_resource type="Texture2D" uid="uid://b5h30q7r5i1bf" path="res://assets/menu/miriti_runner_menu-title.png" id="4_orlaa"]
 [ext_resource type="Texture2D" uid="uid://cofmkgmd8fw48" path="res://assets/menu/b3.png" id="4_xiffk"]
 [ext_resource type="Script" uid="uid://ciw8xfqsvd4ij" path="res://scripts/scenes/buttons/Setting.cs" id="5_xhdtk"]
@@ -19,19 +19,22 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=919560734]
+layer = -1
 
 [node name="Parallax2D" type="Parallax2D" parent="CanvasLayer" unique_id=383067284]
 modulate = Color(0.5689727, 0.56897277, 0.5689727, 1)
 repeat_size = Vector2(0, 160)
+autoscroll = Vector2(0, 32)
 repeat_times = 5
 script = ExtResource("1_aecl0")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Parallax2D" unique_id=81762341]
-position = Vector2(556, 278)
+position = Vector2(589, 316)
 scale = Vector2(4, 4)
 texture = ExtResource("2_h6rtm")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=743047422]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=743047422]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -40,32 +43,32 @@ grow_vertical = 2
 theme_override_constants/separation = 64
 alignment = 1
 
-[node name="title" type="TextureRect" parent="CanvasLayer/VBoxContainer" unique_id=422220508]
+[node name="title" type="TextureRect" parent="VBoxContainer" unique_id=422220508]
 custom_maximum_size = Vector2(-1, 200)
 layout_mode = 2
 texture = ExtResource("4_orlaa")
 expand_mode = 5
 stretch_mode = 5
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer" unique_id=2050432898]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=2050432898]
 layout_mode = 2
 theme_override_constants/separation = 64
 alignment = 1
 
-[node name="settings" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer" unique_id=180597487]
+[node name="settings" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=180597487]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_stretch_ratio = 2.0
 texture = ExtResource("4_xiffk")
 script = ExtResource("5_xhdtk")
 
-[node name="play" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer" unique_id=440873868]
+[node name="play" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=440873868]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 texture = ExtResource("6_swmxd")
 script = ExtResource("7_swmxd")
 
-[node name="quit" type="TextureRect" parent="CanvasLayer/VBoxContainer/HBoxContainer" unique_id=1053350587]
+[node name="quit" type="TextureRect" parent="VBoxContainer/HBoxContainer" unique_id=1053350587]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 texture = ExtResource("7_ua85e")
