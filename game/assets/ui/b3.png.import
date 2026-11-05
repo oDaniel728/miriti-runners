@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://by4te81w1rusp"
-path="res://.godot/imported/miriti_runner_menu-fundo-2.png-c1183f4158d250d997788d6c47c347df.ctex"
+uid="uid://cofmkgmd8fw48"
+path="res://.godot/imported/b3.png-cf18a397cffa8ca0c5ca625f1e97011f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/menu/background/miriti_runner_menu-fundo-2.png"
-dest_files=["res://.godot/imported/miriti_runner_menu-fundo-2.png-c1183f4158d250d997788d6c47c347df.ctex"]
+source_file="res://assets/ui/b3.png"
+dest_files=["res://.godot/imported/b3.png-cf18a397cffa8ca0c5ca625f1e97011f.ctex"]
 
 [params]
 

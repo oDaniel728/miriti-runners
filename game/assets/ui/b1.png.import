@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm7nl04oixsts"
-path="res://.godot/imported/miriti_runne_spritesheet.png-1910f8632619e5af536735811bcd0ebf.ctex"
+uid="uid://btv3shg0qwwql"
+path="res://.godot/imported/b1.png-c34ef5005cbb60ad85e00fed7a30dc4d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/menu/background/miriti_runne_spritesheet.png"
-dest_files=["res://.godot/imported/miriti_runne_spritesheet.png-1910f8632619e5af536735811bcd0ebf.ctex"]
+source_file="res://assets/ui/b1.png"
+dest_files=["res://.godot/imported/b1.png-c34ef5005cbb60ad85e00fed7a30dc4d.ctex"]
 
 [params]
 

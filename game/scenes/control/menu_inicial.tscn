@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://b8g3vynirlrue"]
 
 [ext_resource type="Script" uid="uid://enficnl4ca5v" path="res://scripts/misc/MenuParallax2d.cs" id="1_aecl0"]
-[ext_resource type="Texture2D" uid="uid://by4te81w1rusp" path="res://assets/menu/background/miriti_runner_menu-fundo-2.png" id="2_h6rtm"]
-[ext_resource type="Texture2D" uid="uid://b5h30q7r5i1bf" path="res://assets/menu/miriti_runner_menu-title.png" id="4_orlaa"]
-[ext_resource type="Texture2D" uid="uid://cofmkgmd8fw48" path="res://assets/menu/b3.png" id="4_xiffk"]
+[ext_resource type="Texture2D" uid="uid://by4te81w1rusp" path="res://assets/ui/background/miriti_runner_menu-fundo-2.png" id="2_h6rtm"]
+[ext_resource type="Texture2D" uid="uid://b5h30q7r5i1bf" path="res://assets/ui/menu_title.png" id="4_orlaa"]
+[ext_resource type="Texture2D" uid="uid://cofmkgmd8fw48" path="res://assets/ui/b3.png" id="4_xiffk"]
 [ext_resource type="Script" uid="uid://ciw8xfqsvd4ij" path="res://scripts/scenes/buttons/Setting.cs" id="5_xhdtk"]
-[ext_resource type="Texture2D" uid="uid://btv3shg0qwwql" path="res://assets/menu/b1.png" id="6_swmxd"]
+[ext_resource type="Texture2D" uid="uid://btv3shg0qwwql" path="res://assets/ui/b1.png" id="6_swmxd"]
 [ext_resource type="Script" uid="uid://lwv3ccjmuq77" path="res://scripts/scenes/buttons/Play.cs" id="7_swmxd"]
-[ext_resource type="Texture2D" uid="uid://c31k1s0q8f7ha" path="res://assets/menu/b2.png" id="7_ua85e"]
+[ext_resource type="Texture2D" uid="uid://c31k1s0q8f7ha" path="res://assets/ui/b2.png" id="7_ua85e"]
 [ext_resource type="Script" uid="uid://b6rjlxl477s2m" path="res://scripts/scenes/buttons/Exit.cs" id="9_ua85e"]
+
+[sub_resource type="Theme" id="Theme_swmxd"]
 
 [node name="MenuInicial" type="Control" unique_id=1292457264]
 layout_mode = 3
@@ -17,6 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_swmxd")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=919560734]
 layer = -1
