@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://bgnc57135sv5b"]
+
+[ext_resource type="Script" uid="uid://cwf53ulum62im" path="res://sura/sura-menus/TitleScreen/TitleScreen.cs" id="1"]
+[ext_resource type="PackedScene" uid="uid://bngdwjuyuwakx" path="res://scenes/game.tscn" id="2"]
+[ext_resource type="AudioStream" uid="uid://b54mqb331dfks" path="res://assets/sounds/bgm/menu.mp3" id="3"]
+[ext_resource type="PackedScene" uid="uid://ceuirast4amq5" path="res://scenes/StreetBg.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://d0f7qbqbmi73a" path="res://sura/sura-menus/MainMenu.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://cabriao7ka058" path="res://sura/sura-menus/settings/SettingsMenu.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://sura/sura-menus/CreditsMenu.tscn" id="7"]
+[ext_resource type="Script" uid="uid://fghqduhdta4y" path="res://sura/sura-menus/MenuPageController.cs" id="8"]
+[ext_resource type="Theme" uid="uid://d17nkisshi7kt" path="res://themes/main.tres" id="9"]
+
+[node name="TitleScreen" type="Control" unique_id=1402851651 node_paths=PackedStringArray("mainMenu", "settingsMenu", "creditsMenu")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("9")
+script = ExtResource("1")
+targetScene = ExtResource("2")
+mainMenu = NodePath("Pages/MainMenu")
+settingsMenu = NodePath("Pages/SettingsMenu")
+creditsMenu = NodePath("Pages/CreditsMenu")
+InitialMusic = ExtResource("3")
+
+[node name="StreetBg" parent="." unique_id=450248069 instance=ExtResource("4")]
+
+[node name="Pages" type="Control" parent="." unique_id=420105913]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainMenu" parent="Pages" unique_id=952124360 instance=ExtResource("5")]
+z_index = 0
+layout_mode = 1
+
+[node name="SettingsMenu" parent="Pages" unique_id=1107939157 instance=ExtResource("6")]
+visible = false
+layout_mode = 1
+
+[node name="CreditsMenu" parent="Pages" unique_id=884136476 instance=ExtResource("7")]
+visible = false
+layout_mode = 1
+
+[node name="MenuPageController" type="Node" parent="." unique_id=1404691596]
+script = ExtResource("8")

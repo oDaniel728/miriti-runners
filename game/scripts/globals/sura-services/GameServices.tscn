@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://dv5aujkwljf5j"]
-
-[ext_resource type="Script" uid="uid://chpm38nxiwkau" path="res://infrastructure/services/GameServices.cs" id="1"]
-
-[node name="GameServices" type="Node" unique_id=797859497]
-script = ExtResource("1")

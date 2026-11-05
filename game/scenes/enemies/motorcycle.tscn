@@ -21,7 +21,7 @@ metadata/_custom_type_script = "uid://dlk8br44ul64w"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=357315602]
 modulate = Color(1, 0.7039573, 0.6940188, 1)
-scale = Vector2(0.6875, 1.828125)
+scale = Vector2(1, 1)
 texture = SubResource("CompressedTexture2D_0ymfi")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1911244813]

@@ -1,0 +1,6 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://bcdm1u2vgnx7g" path="res://sura/sura-services/scene-service/SceneService.cs" id="1"]
+
+[node name="SceneService" type="Node"]
+script = ExtResource("1")

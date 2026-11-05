@@ -11,16 +11,19 @@ config_version=5
 [application]
 
 config/name="miriti-runners"
-run/main_scene="uid://b8g3vynirlrue"
+run/main_scene="uid://d2126uyf7dxr"
 config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://assets/sprites/icon.svg"
 
 [autoload]
 
+GameServices="*uid://dv5aujkwljf5j"
 PlayerManager="*uid://cgmbyhlp8m1n4"
 GameEvents="*uid://c6xp2c2rs7ut5"
 GameManager="*uid://c1j0t68v3pou5"
-SceneTransition="*res://scenes/SceneTransition.tscn"
+AudioService="*res://sura/sura-services/audio-service/AudioService.tscn"
+SceneService="*res://sura/sura-services/scene-service/SceneService.tscn"
+SettingsService="*uid://jnvhs4uxe5wv"
 
 [display]
 

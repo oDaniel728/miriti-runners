@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://jnvhs4uxe5wv"]
+
+[ext_resource type="Script" uid="uid://bxy0qkwimvvw8" path="res://sura/sura-services/settings-service/SettingsService.cs" id="1"]
+
+[node name="SettingsService" type="Node" unique_id=88204962]
+script = ExtResource("1")

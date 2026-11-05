@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dkpeffgdvco4m"]
+
+[ext_resource type="Script" uid="uid://dj1cvk6uvrdc2" path="res://sura/menu-elements/audio-sliders/VolumeSlider.cs" id="1_k3cnt"]
+
+[node name="VolumeSlider" type="HBoxContainer" unique_id=37430853]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -8.5
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+script = ExtResource("1_k3cnt")
+labelName = "SETTINGS_MASTER_VOLUME"
+
+[node name="Label" type="Label" parent="." unique_id=1560114619]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SETTINGS_MASTER_VOLUME"
+
+[node name="HSlider" type="HSlider" parent="." unique_id=1489462542]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 50.0
+rounded = true
+
+[node name="Value" type="Label" parent="." unique_id=1489462543]
+custom_minimum_size = Vector2(34, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "50%"
+horizontal_alignment = 2
