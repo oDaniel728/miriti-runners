@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://cabriao7ka058"]
+
+[ext_resource type="Script" uid="uid://cmwoebx4bjeki" path="res://scenes/menus/sura-menus/SettingsMenu.cs" id="1"]
+[ext_resource type="Theme" uid="uid://d17nkisshi7kt" path="res://themes/main.tres" id="2"]
+[ext_resource type="PackedScene" uid="uid://k77k7vl0ne8g" path="res://scenes/menus/sura-menus/AudioSettings.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://cfuappnfq4jr6" path="res://scenes/menus/sura-menus/LanguageSettings.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://dcjdmrbcn2nn2" path="res://scenes/menus/sura-menus/VideoSettings.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://q2wwy33kq6w1" path="res://scenes/menu-elements/cancel-button/CancelButton.tscn" id="6"]
+
+[node name="SettingsMenu" type="Control" unique_id=750692783]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2")
+script = ExtResource("1")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1518093538]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.4392157)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1013131194]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ConfigSections" type="TabContainer" parent="MarginContainer" unique_id=1707709981]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+size_flags_horizontal = 4
+accessibility_region = true
+tab_alignment = 1
+current_tab = 0
+clip_tabs = false
+use_hidden_tabs_for_min_size = true
+tab_0/title = "MENU_AUDIO_TITLE"
+tab_1/title = "MENU_LANGUAGE_TITLE"
+tab_2/title = "MENU_VIDEO_TITLE"
+
+[node name="Audio" type="PanelContainer" parent="MarginContainer/ConfigSections" unique_id=1991699950]
+layout_mode = 2
+metadata/_tab_index = 0
+metadata/_tab_name = "MENU_AUDIO_TITLE"
+
+[node name="AudioSettings" parent="MarginContainer/ConfigSections/Audio" unique_id=1517113691 instance=ExtResource("3")]
+layout_mode = 2
+
+[node name="Language" type="PanelContainer" parent="MarginContainer/ConfigSections" unique_id=564526625]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+metadata/_tab_name = "MENU_LANGUAGE_TITLE"
+
+[node name="LanguageSettings" parent="MarginContainer/ConfigSections/Language" unique_id=1558752853 instance=ExtResource("4")]
+layout_mode = 2
+
+[node name="Video" type="PanelContainer" parent="MarginContainer/ConfigSections" unique_id=9739603]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+metadata/_tab_name = "MENU_VIDEO_TITLE"
+
+[node name="VideoSettings" parent="MarginContainer/ConfigSections/Video" unique_id=1153478076 instance=ExtResource("5")]
+layout_mode = 2
+
+[node name="CancelButton" parent="MarginContainer" unique_id=1424680268 instance=ExtResource("6")]
+layout_mode = 2
+size_flags_vertical = 0
+
+[connection signal="pressed" from="MarginContainer/CancelButton" to="." method="OnBackPressed"]

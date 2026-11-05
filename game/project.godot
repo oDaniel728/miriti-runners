@@ -58,6 +58,10 @@ sprint={
 , null]
 }
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://assets/translate/languages.en_US.translation", "res://assets/translate/languages.es.translation", "res://assets/translate/languages.ja.translation", "res://assets/translate/languages.pt_BR.translation", "res://assets/translate/languages.ru.translation")
+
 [layer_names]
 
 2d_physics/layer_2="Obstaculos"

@@ -1,0 +1,69 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://features/scenes/menus/TitleScreen/TitleScreen.cs" id="1"]
+[ext_resource type="Theme" path="res://ui/themes/main_v2.tres" id="9"]
+[ext_resource type="PackedScene" path="res://features/scenes/predio/House.tscn" id="2"]
+[ext_resource type="AudioStream" path="res://assets/sounds/bgm/menu.mp3" id="3"]
+[ext_resource type="PackedScene" path="res://features/backgrounds/gameplay/sky/SkyBg.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://features/scenes/menus/MainMenu.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://features/scenes/menus/SettingsMenu.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://features/scenes/menus/CreditsMenu.tscn" id="7"]
+[ext_resource type="Script" path="res://features/scenes/menus/MenuPageController.cs" id="8"]
+
+[node name="TitleScreen" type="Control" node_paths=PackedStringArray("mainMenu", "settingsMenu", "creditsMenu")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme = ExtResource("9")
+script = ExtResource("1")
+targetScene = ExtResource("2")
+InitialMusic = ExtResource("3")
+mainMenu = NodePath("Pages/MainMenu")
+settingsMenu = NodePath("Pages/SettingsMenu")
+creditsMenu = NodePath("Pages/CreditsMenu")
+
+[node name="SkyBg" parent="." instance=ExtResource("4")]
+firstColor = Color(0.98, 0.94178, 0.7252, 1)
+secondColor = Color(0, 0.36, 0.6, 1)
+parallaxOpacity = 0.6
+
+[node name="Pages" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainMenu" parent="Pages" instance=ExtResource("5")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SettingsMenu" parent="Pages" instance=ExtResource("6")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CreditsMenu" parent="Pages" instance=ExtResource("7")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuPageController" type="Node" parent="."]
+script = ExtResource("8")

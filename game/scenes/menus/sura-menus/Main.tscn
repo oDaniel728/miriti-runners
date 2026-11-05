@@ -1,0 +1,27 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://dm0c721mfs6ka" path="res://scenes/menus/sura-menus/Main.cs" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/menus/sura-menus/TitleScreen/TitleScreen.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://infrastructure/scene/main/Gui.tscn" id="3"]
+[ext_resource type="AudioStream" uid="uid://b54mqb331dfks" path="res://assets/sounds/bgm/menu.mp3" id="4"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/cursor/cursor_arrow.png" id="5"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/cursor/cursor_pointing_hand.png" id="6"]
+[ext_resource type="Script" path="res://features/scenes/debug/DebugSceneShortcut.cs" id="7"]
+[ext_resource type="PackedScene" path="res://features/scenes/debug/debug.tscn" id="8"]
+
+[node name="Main" type="Node" node_paths=PackedStringArray("_sceneContainer", "_GUI")]
+script = ExtResource("1")
+_sceneContainer = NodePath("SceneContainer")
+_GUI = NodePath("GUI")
+InitialScene = ExtResource("2")
+cursorNormalSprite = ExtResource("5")
+cursorClickSprite = ExtResource("6")
+initialMusic = ExtResource("4")
+
+[node name="DebugSceneShortcut" type="Node" parent="."]
+script = ExtResource("7")
+_debugScene = ExtResource("8")
+
+[node name="SceneContainer" type="Node" parent="."]
+
+[node name="GUI" parent="." instance=ExtResource("3")]

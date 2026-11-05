@@ -60,6 +60,40 @@ region = Rect2(80, 24, 16, 8)
 atlas = ExtResource("1_0avsd")
 region = Rect2(80, 16, 16, 8)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_cj5eq"]
+atlas = ExtResource("1_0avsd")
+region = Rect2(0, 40, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_la1y0"]
+atlas = ExtResource("1_0avsd")
+region = Rect2(8, 40, 8, 8)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qopxo"]
+texture = ExtResource("1_0avsd")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+region_rect = Rect2(8, 32, 8, 8)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u3lif"]
+texture = ExtResource("1_0avsd")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+region_rect = Rect2(0, 32, 8, 8)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q60tm"]
+texture = ExtResource("1_0avsd")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(0, 0, 16, 16)
+
 [resource]
 Button/constants/outline_size = 4
 Button/font_sizes/font_size = 16
@@ -70,3 +104,11 @@ Button/styles/normal = SubResource("StyleBoxTexture_vlew8")
 Button/styles/pressed = SubResource("StyleBoxTexture_bekt7")
 CheckButton/icons/checked = SubResource("AtlasTexture_wc0q8")
 CheckButton/icons/unchecked = SubResource("AtlasTexture_7d6gw")
+HSlider/icons/grabber = SubResource("AtlasTexture_cj5eq")
+HSlider/icons/grabber_highlight = SubResource("AtlasTexture_la1y0")
+HSlider/styles/grabber_area = SubResource("StyleBoxTexture_qopxo")
+HSlider/styles/slider = SubResource("StyleBoxTexture_u3lif")
+Label/colors/font_shadow_color = Color(0, 0, 0, 0.5921569)
+Label/constants/outline_size = 4
+Label/constants/shadow_outline_size = 0
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_q60tm")
