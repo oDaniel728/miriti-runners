@@ -4,10 +4,12 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ncv88"]
 texture = ExtResource("1_0avsd")
-texture_margin_left = 3.0
+texture_margin_left = 2.0
 texture_margin_top = 2.0
-texture_margin_right = 3.0
+texture_margin_right = 2.0
 texture_margin_bottom = 4.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
 region_rect = Rect2(24, 8, 8, 8)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wykhr"]
@@ -16,6 +18,8 @@ texture_margin_left = 3.0
 texture_margin_top = 2.0
 texture_margin_right = 3.0
 texture_margin_bottom = 4.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
 region_rect = Rect2(16, 8, 8, 8)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_78ekx"]
@@ -24,6 +28,8 @@ texture_margin_left = 3.0
 texture_margin_top = 4.0
 texture_margin_right = 3.0
 texture_margin_bottom = 2.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
 region_rect = Rect2(32, 8, 8, 8)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vlew8"]
@@ -32,6 +38,8 @@ texture_margin_left = 3.0
 texture_margin_top = 2.0
 texture_margin_right = 3.0
 texture_margin_bottom = 4.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
 region_rect = Rect2(16, 0, 8, 8)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bekt7"]
@@ -40,7 +48,17 @@ texture_margin_left = 5.0
 texture_margin_top = 4.0
 texture_margin_right = 5.0
 texture_margin_bottom = 2.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
 region_rect = Rect2(32, 8, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wc0q8"]
+atlas = ExtResource("1_0avsd")
+region = Rect2(80, 24, 16, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7d6gw"]
+atlas = ExtResource("1_0avsd")
+region = Rect2(80, 16, 16, 8)
 
 [resource]
 Button/constants/outline_size = 4
@@ -50,3 +68,5 @@ Button/styles/hover = SubResource("StyleBoxTexture_wykhr")
 Button/styles/hover_pressed = SubResource("StyleBoxTexture_78ekx")
 Button/styles/normal = SubResource("StyleBoxTexture_vlew8")
 Button/styles/pressed = SubResource("StyleBoxTexture_bekt7")
+CheckButton/icons/checked = SubResource("AtlasTexture_wc0q8")
+CheckButton/icons/unchecked = SubResource("AtlasTexture_7d6gw")

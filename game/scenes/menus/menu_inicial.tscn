@@ -10,6 +10,19 @@
 [ext_resource type="Script" uid="uid://lwv3ccjmuq77" path="res://scripts/scenes/buttons/Play.cs" id="8_38jbv"]
 [ext_resource type="Texture2D" uid="uid://c31k1s0q8f7ha" path="res://assets/sprites/ui/b2.png" id="9_08uyw"]
 [ext_resource type="Script" uid="uid://b6rjlxl477s2m" path="res://scripts/scenes/buttons/Exit.cs" id="10_05ak6"]
+[ext_resource type="Texture2D" uid="uid://dcm37g02285h7" path="res://assets/sprites/ui/ui_atlas.png" id="11_duoqr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j131u"]
+atlas = ExtResource("11_duoqr")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6xpb"]
+atlas = ExtResource("11_duoqr")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1g2e"]
+atlas = ExtResource("11_duoqr")
+region = Rect2(16, 16, 16, 16)
 
 [node name="MenuInicial" type="Control" unique_id=1292457264]
 layout_mode = 3
@@ -84,11 +97,14 @@ alignment = 1
 [node name="Button" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=1842591373]
 layout_mode = 2
 text = "olá"
+icon = SubResource("AtlasTexture_j131u")
 
 [node name="Button2" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=2090817602]
 layout_mode = 2
 text = "gffjg"
+icon = SubResource("AtlasTexture_s6xpb")
 
 [node name="Button3" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=205323880]
 layout_mode = 2
 text = "gfhfhgfh"
+icon = SubResource("AtlasTexture_m1g2e")
