@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://cyp3ldmc0q5ht"]
+
+[ext_resource type="Theme" uid="uid://d17nkisshi7kt" path="res://themes/main.tres" id="1_7chpe"]
+[ext_resource type="Script" uid="uid://b48axswa8ovgv" path="res://scenes/control/MenuGameOver.cs" id="2_j7bi3"]
+
+[node name="MenuGameOver" type="Control" unique_id=1286102756 node_paths=PackedStringArray("backButton")]
+auto_translate_mode = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_7chpe")
+script = ExtResource("2_j7bi3")
+backButton = NodePath("MarginContainer/VBoxContainer/PanelContainer/Button")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=248668330]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.19215687)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=280189089]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_right = 0.8
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=920270147]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1168449423]
+layout_mode = 2
+theme_override_font_sizes/font_size = 128
+text = "Game Over"
+horizontal_alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=405791424]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/PanelContainer" unique_id=693416318]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Back"

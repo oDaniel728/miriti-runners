@@ -31,6 +31,10 @@ window/stretch/aspect="expand"
 
 project/assembly_name="miriti-runners"
 
+[gui]
+
+theme/custom_font="uid://b2kd4vh12mfge"
+
 [input]
 
 left={
