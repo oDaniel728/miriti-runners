@@ -1,0 +1,35 @@
+key,pt-BR,en-US,es,ru,ja
+MENU_MAIN_TITLE,Menu Principal,Main Menu,Menú Principal,Главное Меню,メインメニュー
+MENU_MAIN_PLAY,Jogar,Play,Jugar,Играть,プレイ
+MENU_MAIN_SETTINGS,Opções,Settings,Opciones,Настройки,設定
+MENU_MAIN_CREDITS,Créditos,Credits,Créditos,Титры,クレジット
+MENU_MAIN_QUIT,Sair,Quit,Salir,Выйти,終了
+
+MENU_PAUSE_TITLE,Jogo Pausado,Paused,Juego en Pausa,Игра на Паузе,ゲーム一時停止
+MENU_PAUSE_RESUME,Retornar,Resume,Reanudar,Продолжить,再開
+MENU_PAUSE_MAIN_MENU,Voltar ao Menu Principal,Return to Main Menu,Volver al Menú Principal,Вернуться в Главное Меню,メインメニューに戻る
+
+MENU_SETTINGS_TITLE,Opções,Settings,Opciones,Настройки,設定
+MENU_SETTINGS_AUDIO,Áudio,Audio,Audio,Звук,オーディオ
+MENU_SETTINGS_VIDEO,Vídeo,Video,Vídeo,Видео,映像
+MENU_SETTINGS_LANGUAGE,Idioma,Language,Idioma,Язык,言語
+MENU_SETTINGS_BACK,Voltar,Back,Volver,Назад,戻る
+
+MENU_AUDIO_TITLE,Áudio,Audio,Audio,Звук,オーディオ
+SETTINGS_MASTER_VOLUME,Volume Geral,Master Volume,Volumen General,Общая Громкость,マスター音量
+SETTINGS_MUSIC_VOLUME,Música,Music,Música,Музыка,音楽
+SETTINGS_SFX_VOLUME,Efeitos,SFX,Efectos Sonoros,Звуковые Эффекты,効果音
+SETTINGS_AMBIENT_VOLUME,Ambiente,Ambient,Ambiente,Звук Окружения,環境音
+
+MENU_VIDEO_TITLE,Vídeo,Video,Vídeo,Видео,映像
+SETTINGS_DISPLAY_MODE,Modo de Exibição,Display Mode,Modo de Pantalla,Режим Отображения,表示モード
+SETTINGS_DISPLAY_FULLSCREEN,Tela Cheia,Fullscreen,Pantalla Completa,Полный Экран,フルスクリーン
+SETTINGS_DISPLAY_WINDOWED,Janela,Windowed,Ventana,В Окне,ウィンドウ
+SETTINGS_VSYNC,V-Sync,V-Sync,V-Sync,V-Sync,V-Sync
+
+MENU_LANGUAGE_TITLE,Idioma,Language,Idioma,Язык,言語
+LANGUAGE_PORTUGUESE,Português,Portuguese,Portugués,Португальский,ポルトガル語
+LANGUAGE_ENGLISH,Inglês,English,Inglés,Английский,英語
+LANGUAGE_SPANISH,Espanhol,Spanish,Español,Испанский,スペイン語
+LANGUAGE_RUSSIAN,Russo,Russian,Ruso,Русский,ロシア語
+LANGUAGE_JAPANESE,Japonês,Japanese,Japonés,Японский,日本語

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c0ebkspcb8n0s"]
+
+[ext_resource type="Script" uid="uid://v462tg4vwmd6" path="res://sura/sura-gameplay-gui/scene-transition/SceneTransition.cs" id="1_llan4"]
+
+[node name="SceneTransition" type="Control" unique_id=1518877647 node_paths=PackedStringArray("_fade")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_llan4")
+_fade = NodePath("ColorRect")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=713757279]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

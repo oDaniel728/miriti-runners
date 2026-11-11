@@ -1,22 +1,25 @@
 [gd_scene format=3 uid="uid://bbsanf58fwpox"]
 
-[ext_resource type="Texture2D" uid="uid://d4afby6bhndvo" path="res://icon.svg" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://cli2ub0pjpkkh" path="res://scripts/scenes/Player.cs" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://dyhi3q0vgqkut" path="res://assets/sprites/characters/miriti_runner_protagonista_v2.png" id="2_g2els"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4g3bo"]
-radius = 63.03174
+radius = 11.045361
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
-radius = 75.95393
+radius = 16.03122
 
 [node name="Player" type="CharacterBody2D" unique_id=1969506453]
 script = ExtResource("1_g2els")
 Speed = 750.0
-Acceleration = 2000.0
-Friction = 4000.0
+Acceleration = 400.0
+Friction = 800.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1058534357]
-texture = ExtResource("1_3vyb7")
+texture = ExtResource("2_g2els")
+hframes = 4
+vframes = 2
+frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1393002169]
 shape = SubResource("CircleShape2D_4g3bo")

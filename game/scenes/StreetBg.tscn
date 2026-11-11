@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://ceuirast4amq5"]
+
+[ext_resource type="Script" uid="uid://enficnl4ca5v" path="res://scripts/misc/MenuParallax2d.cs" id="1_kqn7a"]
+[ext_resource type="Texture2D" uid="uid://by4te81w1rusp" path="res://assets/sprites/ui/background/miriti_runner_menu-fundo-2.png" id="2_o8wtm"]
+
+[node name="StreetBg" type="CanvasLayer" unique_id=2003969801]
+layer = -1
+
+[node name="Control" type="Control" parent="." unique_id=697021320]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Parallax2D" type="Parallax2D" parent="Control" unique_id=61446990]
+modulate = Color(0.5689727, 0.56897277, 0.5689727, 1)
+repeat_size = Vector2(0, 160)
+autoscroll = Vector2(0, 32)
+repeat_times = 5
+script = ExtResource("1_kqn7a")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/Parallax2D" unique_id=1432412567]
+texture = ExtResource("2_o8wtm")
+centered = false

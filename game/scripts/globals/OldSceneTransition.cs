@@ -1,8 +1,8 @@
 using Godot;
 
-public partial class SceneTransition : CanvasLayer
+public partial class OldSceneTransition : CanvasLayer
 {
-    public static SceneTransition Instance { get; private set; }
+    public static OldSceneTransition Instance { get; private set; }
 
     private ColorRect _fadeRect;
     private Tween _tween;

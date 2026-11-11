@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://buo4u3v38c71i"
+path="res://.godot/imported/Crystal Heights.wav-8640450d32d4028bc3c62bddef24aaf1.sample"
+
+[deps]
+
+source_file="res://assets/sounds/ambience/Crystal Heights.wav"
+dest_files=["res://.godot/imported/Crystal Heights.wav-8640450d32d4028bc3c62bddef24aaf1.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

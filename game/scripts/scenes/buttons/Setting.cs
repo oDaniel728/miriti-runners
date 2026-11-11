@@ -6,6 +6,6 @@ public partial class Setting : HoverButton
 
     protected override void OnClicked()
     {
-        SceneTransition.Instance.TransitionTo(ScenePath);
+        OldSceneTransition.Instance.TransitionTo(ScenePath);
     }
 }

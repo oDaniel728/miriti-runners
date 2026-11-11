@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://d2126uyf7dxr"]
+
+[ext_resource type="Script" uid="uid://dm0c721mfs6ka" path="res://sura/roots/core-roots/Main.cs" id="1"]
+[ext_resource type="PackedScene" path="res://sura/sura-menus/TitleScreen/TitleScreen.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://cna1orsblrl81" path="res://sura/roots/core-roots/Gui.tscn" id="3"]
+[ext_resource type="AudioStream" uid="uid://b54mqb331dfks" path="res://assets/sounds/bgm/menu.mp3" id="4"]
+[ext_resource type="Texture2D" uid="uid://bflw4ni3e0vqt" path="res://assets/sprites/ui/cursor/cursor_arrow.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c146cm4xhttub" path="res://assets/sprites/ui/cursor/cursor_pointing_hand.png" id="6"]
+
+[node name="Main" type="Node" unique_id=1627198533 node_paths=PackedStringArray("_sceneContainer", "_GUI")]
+script = ExtResource("1")
+InitialScene = ExtResource("2")
+cursorNormalSprite = ExtResource("5")
+cursorClickSprite = ExtResource("6")
+initialMusic = ExtResource("4")
+_sceneContainer = NodePath("SceneContainer")
+_GUI = NodePath("GUI")
+
+[node name="SceneContainer" type="Node" parent="." unique_id=784019015]
+
+[node name="GUI" parent="." unique_id=1408207297 instance=ExtResource("3")]
+_mobileControls = null
+_hotbar = null
+_dialogBox = null
