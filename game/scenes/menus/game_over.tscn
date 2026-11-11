@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://bdau5r2ycdq8s"]
+
+[ext_resource type="Theme" uid="uid://d17nkisshi7kt" path="res://themes/main.tres" id="1_ujjcl"]
+[ext_resource type="Script" uid="uid://dlpu76p1ednxb" path="res://scenes/menus/GameOver.cs" id="2_asori"]
+
+[node name="GameOver" type="Control" unique_id=1527117618 node_paths=PackedStringArray("titleLabel", "subtitleLabel")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ujjcl")
+script = ExtResource("2_asori")
+titleLabel = NodePath("MarginContainer/VBoxContainer/Title")
+subtitleLabel = NodePath("MarginContainer/VBoxContainer/Subtitle")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1228954283]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.4509804)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=21073066]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 64
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 64
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=885139525]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1028299097]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "	Game Over"
+
+[node name="Subtitle" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1255633923]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Aperte ESPAÇO para tentar novamente"

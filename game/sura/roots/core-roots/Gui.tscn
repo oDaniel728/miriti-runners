@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cna1orsblrl81"]
 
 [ext_resource type="Script" uid="uid://3mkpgg0vnnp0" path="res://sura/roots/core-roots/Gui.cs" id="1"]
+[ext_resource type="PackedScene" uid="uid://bdau5r2ycdq8s" path="res://scenes/menus/game_over.tscn" id="2_p3o7t"]
 [ext_resource type="PackedScene" uid="uid://2ip8o25cvq52" path="res://sura/sura-gameplay-gui/pause-menu/PauseMenu.tscn" id="5"]
 [ext_resource type="PackedScene" uid="uid://c0ebkspcb8n0s" path="res://sura/sura-gameplay-gui/scene-transition/SceneTransition.tscn" id="6"]
 
@@ -17,6 +18,10 @@ _sceneTransition = NodePath("TransitionLayer/SceneTransition")
 _pauseMenu = NodePath("PauseLayer/PauseMenu")
 
 [node name="GameplayLayer" type="CanvasLayer" parent="." unique_id=422102111]
+
+[node name="GameOver" parent="GameplayLayer" unique_id=1527117618 instance=ExtResource("2_p3o7t")]
+offset_transform_enabled = true
+offset_transform_visual_only = false
 
 [node name="HUD" type="Control" parent="GameplayLayer" unique_id=1501471012]
 visible = false
@@ -35,6 +40,7 @@ visible = false
 
 [node name="TransitionLayer" type="CanvasLayer" parent="." unique_id=413129070]
 layer = 40
+visible = false
 
 [node name="SceneTransition" parent="TransitionLayer" unique_id=1567103006 instance=ExtResource("6")]
 z_index = 1

@@ -1,17 +1,15 @@
 [gd_scene format=3 uid="uid://7banvpghhnsj"]
 
 [ext_resource type="Script" uid="uid://dlk8br44ul64w" path="res://scripts/scenes/Enemy2d.cs" id="1_vwrtj"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0ymfi"]
-load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+[ext_resource type="Texture2D" uid="uid://c31k1s0q8f7ha" path="res://assets/sprites/ui/b2.png" id="2_0ymfi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vwrtj"]
-radius = 52.0
-height = 234.0
+radius = 16.0
+height = 76.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ymfi"]
-radius = 31.0
-height = 220.0
+radius = 12.0
+height = 70.0
 
 [node name="Enemy2d" type="CharacterBody2D" unique_id=1047882917 node_paths=PackedStringArray("CollisionArea")]
 script = ExtResource("1_vwrtj")
@@ -21,8 +19,7 @@ metadata/_custom_type_script = "uid://dlk8br44ul64w"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=357315602]
 modulate = Color(1, 0.7039573, 0.6940188, 1)
-scale = Vector2(1, 1)
-texture = SubResource("CompressedTexture2D_0ymfi")
+texture = ExtResource("2_0ymfi")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1911244813]
 collision_mask = 2

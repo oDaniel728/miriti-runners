@@ -12,6 +12,7 @@ public partial class GameManager : Node
     private float playerPace = 1;
     public void SetPlayerPace(float value) { 
         if (value == playerPace) return;
+        value = value >= 1.5f ? 1.5f : value;
         GameEvents.TriggerPlayerPaceChanged(value); 
         playerPace = value; 
     }

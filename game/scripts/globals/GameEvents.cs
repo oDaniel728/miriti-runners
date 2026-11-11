@@ -17,6 +17,11 @@ public partial class GameEvents : Node
     {
         OnPlayerDied?.Invoke(source);
     }
+    public static event Action OnGameOverEnded;
+    public static void TriggerGameOverEnded()
+    {
+        OnGameOverEnded?.Invoke();
+    }
 
     public static event Action<float> OnPlayerPaceChanged;
     public static void TriggerPlayerPaceChanged(float value)

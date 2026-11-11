@@ -17,18 +17,22 @@ config/icon="res://assets/sprites/icon.svg"
 
 [autoload]
 
-GameServices="*uid://dv5aujkwljf5j"
 PlayerManager="*uid://cgmbyhlp8m1n4"
 GameEvents="*uid://c6xp2c2rs7ut5"
 GameManager="*uid://c1j0t68v3pou5"
+SceneTransition="*res://scenes/SceneTransition.tscn"
+GameServices="*uid://dv5aujkwljf5j"
 AudioService="*res://sura/sura-services/audio-service/AudioService.tscn"
 SceneService="*res://sura/sura-services/scene-service/SceneService.tscn"
 SettingsService="*uid://jnvhs4uxe5wv"
 
 [display]
 
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+window/stretch/scale=4.0
 
 [dotnet]
 

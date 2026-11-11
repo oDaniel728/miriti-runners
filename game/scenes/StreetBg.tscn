@@ -23,6 +23,5 @@ repeat_times = 5
 script = ExtResource("1_kqn7a")
 
 [node name="Sprite2D" type="Sprite2D" parent="Control/Parallax2D" unique_id=1432412567]
-position = Vector2(589, 316)
-scale = Vector2(1, 1)
 texture = ExtResource("2_o8wtm")
+centered = false
